@@ -1,4 +1,4 @@
-ds
+Extremity
 ==
 
-Backend API using JSON-RPC standards
+Backend API
