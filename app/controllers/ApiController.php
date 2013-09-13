@@ -6,12 +6,12 @@ abstract class ApiController extends \BaseController {
   
   protected function processRequest()
   {
-    $req = Rest::initializeRequest();
+    $request = Rest::initializeRequest();
     
     // Check if object 'Rest' has been instantiated
-    if ($req instanceof Rest)
+    if ($request instanceof Rest)
     {
-      return $this->handleRequest($req);
+      return $this->handleRequest($request);
     }
     else
     {
