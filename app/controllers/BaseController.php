@@ -14,5 +14,10 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 	}
+  
+  public function missingMethod($parameters)
+  {
+    return Rest::undefinedMethod();
+  }
 
 }
