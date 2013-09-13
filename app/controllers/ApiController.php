@@ -2,7 +2,7 @@
 
 abstract class ApiController extends \BaseController {
 
-	abstract protected function handleRequest($request);
+  abstract protected function handleRequest($request);
   
   protected function processRequest()
   {
