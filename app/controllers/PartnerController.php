@@ -10,7 +10,7 @@ class PartnerController extends \ApiController {
   
   private function domainList()
   {
-    return Rest::response(array(), SUCCESS);
+    return Rest::response(array());
   }
 
 }

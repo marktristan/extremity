@@ -27,7 +27,7 @@ class Rest {
     }
   }
   
-  public static function response($data, $code = SUCCESS)
+  public static function response($data, $code = 1000)
   {
     $status = Config::get('status');
     $build = array(
