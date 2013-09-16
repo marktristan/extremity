@@ -12,7 +12,15 @@ abstract class ApiController extends \BaseController {
     if ($request instanceof Rest)
     {
       // All request parameters are valid
-      return $this->handleRequest($request);
+      // Check if client's IP are in whitelist
+      if (Rest::checkWhitelist())
+      {
+        return $this->handleRequest($request);
+      }
+      else
+      {
+        return Rest::notAuthorized();
+      }
     }
     else
     {
