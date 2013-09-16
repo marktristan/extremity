@@ -15,6 +15,11 @@ class BaseController extends Controller {
 		}
 	}
   
+  /**
+   * Handles undefined methods
+   * 
+   * @return string
+   */
   public function missingMethod($parameters)
   {
     return Rest::undefinedMethod();

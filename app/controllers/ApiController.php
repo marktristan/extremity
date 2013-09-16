@@ -11,10 +11,12 @@ abstract class ApiController extends \BaseController {
     // Check if object 'Rest' has been instantiated
     if ($request instanceof Rest)
     {
+      // All request parameters are valid
       return $this->handleRequest($request);
     }
     else
     {
+      // There's something wrong in the request parameters
       return Rest::invalidRequest();
     }
   }
