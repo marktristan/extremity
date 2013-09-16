@@ -4,7 +4,7 @@ abstract class ApiController extends \BaseController {
 
   abstract protected function handleRequest($request);
   
-  protected function processRequest()
+  private function processRequest()
   {
     $request = Rest::initializeRequest();
     
