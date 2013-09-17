@@ -14,8 +14,6 @@ class Rest {
     $this->method = $request->method;
     $this->action = $request->action;
     $this->params = $request->params;
-    
-    //$this->_checkWhitelist();
   }
   
   public static function initializeRequest()
