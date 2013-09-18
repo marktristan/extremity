@@ -2,7 +2,7 @@
 
 class PartnerController extends \ApiController {
 
-	public function handleRequest($request)
+  public function handleRequest($request)
   {
     $method = camel_case($request->method);
     return $this->$method($request);
