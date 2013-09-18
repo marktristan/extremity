@@ -66,7 +66,7 @@ class Rest {
       'msg' => 'Not authorized'
     );
     
-    return Response::json($build, 401);
+    return Response::json($build, 403);
   }
   
   public static function checkWhitelist()
