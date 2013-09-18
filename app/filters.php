@@ -41,7 +41,8 @@ Route::filter('auth', function()
 
 Route::filter('auth.basic', function()
 {
-	return Auth::basic();
+  // defaults to email but I used username
+	return Auth::basic('username');
 });
 
 /*

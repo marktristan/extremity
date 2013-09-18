@@ -16,4 +16,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::controller('partner', 'PartnerController');
+Route::group(array('before' => 'auth.basic'), function()
+{
+  // Only authenticated users may enter...
+  Route::controller('partner', 'PartnerController');
+});
