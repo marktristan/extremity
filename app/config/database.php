@@ -84,6 +84,17 @@ return array(
 			'prefix'   => '',
 			'schema'   => 'public',
 		),
+    
+    'dsstaging' => array(
+			'driver'   => 'pgsql',
+			'host'     => '10.1.11.142',
+			'database' => 'migration0904',
+			'username' => 'postgres',
+			'password' => '',
+			'charset'  => 'utf8',
+			'prefix'   => '',
+			'schema'   => 'public',
+		),
 
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',

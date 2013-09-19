@@ -12,5 +12,11 @@ class PartnerController extends \ApiController {
   {
     return Rest::response($request);
   }
+  
+  private function domainInfo($request)
+  {
+    $data = json_decode($request->params);
+    return Domain::findDomainInfoByName($data->domain);
+  }
 
 }
