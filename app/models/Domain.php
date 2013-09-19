@@ -11,7 +11,7 @@ class Domain extends Eloquent {
   
   protected $connection = 'dsstaging';
   
-  public static function findDomainInfoById($handle)
+  public static function findInfoById($handle)
   {
     try
     {
@@ -31,7 +31,7 @@ class Domain extends Eloquent {
     }
   }
   
-  public static function findDomainInfoByName($handle)
+  public static function findInfoByName($handle)
   {
     try
     {

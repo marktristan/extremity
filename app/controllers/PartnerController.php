@@ -16,7 +16,7 @@ class PartnerController extends \ApiController {
   private function domainInfo($request)
   {
     $data = json_decode($request->params);
-    return Domain::findDomainInfoByName($data->domain);
+    return Domain::findInfoByName($data->domain);
   }
 
 }
