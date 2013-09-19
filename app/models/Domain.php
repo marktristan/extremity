@@ -9,6 +9,11 @@ class Domain extends Eloquent {
 	 */
 	protected $table = 'domains';
   
+  /**
+   * The database connection used by the model
+   * 
+   * @var string
+   */
   protected $connection = 'dsstaging';
   
   public static function findInfoById($handle)
