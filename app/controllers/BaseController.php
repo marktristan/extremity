@@ -20,7 +20,7 @@ class BaseController extends Controller {
    * 
    * @return string
    */
-  public function missingMethod($parameters)
+  public function missingMethod($parameters = array())
   {
     return Rest::undefinedMethod();
   }
